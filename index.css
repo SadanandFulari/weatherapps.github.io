@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+.main{
+    display: flex;
+    height: 100vh;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm7mSKZ8zLgkMz7xsMx1-pailvBZOxoIOIAw&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    border: 1px solid black;
+    width: 700px;
+    height: 550px;
+    margin: 80px auto;
+    border-radius: 30px;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjzKBywE8rf0HPGkp0yxxjjPHRKw1kg84BOw&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: black 3px 3px 10px 5px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.info1{
+
+    width: 300px;
+    padding: 30px;
+   
+}
+.down{
+    margin-top: 130px;
+    align-items: center;
+    text-align: center;
+    
+}
+.day{
+    font-size: 50px;
+}
+.Date{
+    font-size: 20px;
+}
+.location{
+    margin-top: 30px;
+    font-size: 25px;
+}
+.img{
+    margin-left: -20px;
+}
+.temp{
+    margin-top: -30px;
+    font-size: 50px;
+}
+.name{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.info2{
+    
+    width: 400px;
+    padding: 30px;
+    font-size: 40px;
+    line-height: 90px;
+    
+}
+.humidity{
+    margin-top: 30px;
+}
+.wind {
+    line-height: 40px;
+    margin-top: 10px;
+}
+.visible{
+    margin-top: 10px;
+}
+input{
+    width: 270px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+input::placeholder{
+    font-size: 20px;
+    text-align: center;
+}
+#btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+#btn:hover{
+    transform: scale(1.2);
+}
+input:hover{
+    background: black;
+    color: white;
+}
+.rightarrow{
+    position: absolute;
+    margin-left: 650px;
+    margin-top: 500px;
+}
+#flip{
+    display: none;
+}
+.hidearrow{
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width : 480px){
+    .container{
+        width: 400px;
+    }
+    .info2{
+        display: none;
+    }
+    .leftarrow{
+        display: block;
+    }
+    
+}

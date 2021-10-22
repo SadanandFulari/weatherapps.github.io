@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather app</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="main">
+        <div id="containers" class="container">
+            <div  id="info1" class="info1">
+                <div class="day"></div>
+                <div class="Date"></div>
+                <div class="location">
+                    <i class='fas fa-map-marker-alt'></i>Mumbai, IN
+                </div>
+
+                <div class="down">
+                    <div class="img">
+                        <img src="http://openweathermap.org/img/wn/50d.png" alt="" width="100px" height="100px">
+                    </div>
+                    <div class="temp"></div>
+                    <div class="name"></div>
+                </div>
+                <label class="leftarrow hidearrow"  >
+                    <i id="leftarw" onclick="abc()"  class="fas fa-arrow-circle-left fa-2x"></i>
+                </label>
+            </div>
+            <div id="info2" class="info2">
+                <form class="input" onsubmit="getinputinfo(event)">
+                    <input type="text" name="text" id="" placeholder="Enter Location Here" required>
+                    <button id="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+                <div class="humidity">Humidity &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="deg">
+                    </span></div>
+                <div class="wind">Wind Speed <br><span class="speed"> </span></div>
+                <div class="visible">Visibility &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="visi"></span> </div>
+                <div class="avgtemp">AVG TEMP &nbsp;&nbsp;&nbsp; <span class="tmp"> </span></div>
+
+            </div>
+            <label id="rightarw" class="rightarrow hidearrow" >
+                <i id="right" onclick="def()" class="fas fa-arrow-circle-right fa-2x"></i>
+            </label>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
